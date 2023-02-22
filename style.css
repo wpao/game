@@ -1,0 +1,43 @@
+body
+{
+    background-color: black;
+    margin: 10px 10px;
+}
+.tombol
+{
+    border: 1px solid tomato;
+    width: 300px;
+    margin: 50px auto;
+    box-sizing: border-box;
+    padding: 5px;
+    display: grid;
+    gap: 10px;
+}
+.tombol-item
+{
+    padding: 20px;
+}
+.up
+{
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    text-align: center;
+}
+.right
+{
+    grid-column: 3;
+    grid-row: 2;
+    text-align: center;
+}
+.left
+{
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+}
+.down
+{
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    text-align: center;
+}

@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pacman</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <canvas id="canvas" width="500" height="500"></canvas>
-    <div style="display: none;">
-        <img id="animaitons" src="assets/animations.gif" alt="">
-        <img id="ghosts" src="assets/ghost.png" alt="">
+    <div style="display:none;">
+        <img id="animation" src="animations.gif" width="140" height="20">
+        <img id="ghosts" src="ghost.png" width="140" height="20">
     </div>
+
+    <div class="tombol">
+        <div class="up"><button onclick="up()" class="tombol-item">w</button></div>
+        <div class="right"><button onclick="right()" class="tombol-item">d</button></div>
+        <div class="left"><button onclick="left()" class="tombol-item">a</button></div>
+        <div class="down"><button onclick="down()" class="tombol-item">s</button></div>
+    </div>
+    
+    
     <script src="ghost.js"></script>
     <script src="pacman.js"></script>
     <script src="game.js"></script>
 </body>
+
 </html>
